@@ -1,0 +1,21 @@
+<div *ngIf="(items)">
+
+
+  <!--{{items |json }}
+  {{items.data| json }}-->
+
+  <mat-grid-list class="mat-grid-list" cols="4" guttersize="5px" rowHeight="650px">
+    <mat-grid-tile *ngFor="let i of items.data"   class="mat-grid-tile" aria-describedby="cdk-describedby-message-75" cdk-describedby-host=""
+    ><figure class="mat-figure">
+      <mat-card  class="movie mat-card">
+
+
+          <a [routerLink]="['/Cast',i.id]"><img  class="mat-card-image" mat-card-image="" tabindex="0" src="https://image.tmdb.org/t/p/w500/{{i.poster_path}}"></a>
+
+
+
+      </mat-card>
+      <mat-grid-tile-footer  class="mat-grid-tile-footer"><div class="mat-grid-list-text"></div>{{i.title}}</mat-grid-tile-footer>
+    </figure></mat-grid-tile>
+  </mat-grid-list>
+</div>

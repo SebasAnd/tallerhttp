@@ -1,0 +1,14 @@
+$size : 10px;
+.test-sass{
+  font-size: $size;
+  h1{
+    color: red;
+  }
+  .description{
+
+    color:green;
+    span{
+      color:violet;
+    }
+  }
+}
