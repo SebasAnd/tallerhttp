@@ -7,6 +7,9 @@ import {MoviestestComponent} from './modules/test/moviestest/moviestest.componen
 import {DetailsComponent} from './modules/test/details/details.component';
 import {HttptestComponent} from './modules/test/httptest/httptest.component';
 import {CastComponent} from './modules/test/cast/cast.component';
+import {SearchtestComponent} from './modules/test/searchtest/searchtest.component';
+import {ShowallComponent} from './modules/test/showall/showall.component';
+import {DetailsmoviestestComponent} from './modules/test/detailsmoviestest/detailsmoviestest.component';
 
 const routes: Routes = [
   { path: 'home', component: NothingComponent },
@@ -14,7 +17,10 @@ const routes: Routes = [
   { path: 'Details/:id', component: DetailsComponent },
   { path: 'movies', component: MoviestestComponent },
   { path: 'moviesfromapy', component: HttptestComponent },
-  { path: 'Cast/:id', component: CastComponent }
+  { path: 'Cast/:id', component: CastComponent },
+  { path: 'search', component: ShowallComponent},
+  { path: 'Detailsapi/:id', component: DetailsmoviestestComponent}
+
 ];
 
 @NgModule({

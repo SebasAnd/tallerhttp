@@ -1,0 +1,44 @@
+div.stats {
+  position: absolute;
+  top: 120px;
+  right:10px;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+.main-title {
+
+  font-size: 40px;
+
+}
+.image{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  bottom: 40px;
+  width: 400px;
+  height: 720px
+}
+.second-container{
+  position: absolute;
+  top: 120px;
+  left:580px;
+  width: 700px;
+  height: 500px
+}
+.big-container{
+  position:absolute;
+  top: 120px;
+  left:0px;
+  right: 10px;
+  width: 1500px;
+  height: 785px;
+    background-color: lightgray;
+
+  color: black;
+
+
+}
+.sub-title{
+  font-weight: bold;
+}

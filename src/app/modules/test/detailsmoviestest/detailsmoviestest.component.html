@@ -1,0 +1,37 @@
+<div *ngIf="(items)">
+ <!-- {{items | json}}-->
+
+  <div class="big-container">
+
+    <div *ngIf = 'items.data.poster_path === null; then trueA else falseA'></div>
+    <ng-template #trueA>
+      <img  class="image" mat-card-image="" tabindex="0" src="assets/No_Image/No_image_available.png">
+    </ng-template>
+    <ng-template #falseA>
+      <img  class="image" mat-card-image="" tabindex="0" src="https://image.tmdb.org/t/p/w500/{{items.data.poster_path}}">
+    </ng-template>
+    <div class="stats">
+      <app-stats
+        [data]="{ popularity: items.data.popularity, vote_average: items.data.vote_average, vote_count: items.data.vote_count }">
+      </app-stats>
+    </div>
+    <div class="second-container">
+    <P class="main-title">{{items.data.title}}</P>
+
+      <span *ngFor="let genre of items.data.genres">{{ genre.name }}, </span>
+
+
+    <p>{{items.data.release_date | date :"yyyy/MM/dd"}}</p>
+
+    <p class="sub-title">Overview</p>
+    <p>{{items.data.overview}}</p>
+
+    <p class="sub-title">Productors: </p>
+    <p><span *ngFor="let productors of items.data.production_companies">{{productors.name}},</span></p>
+    <p class="sub-title">Countries: </p>
+    <p><span *ngFor="let countries of items.data.production_countries">{{countries.name}},</span></p>
+
+  </div>
+  </div>
+
+</div>

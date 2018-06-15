@@ -24,6 +24,16 @@ import { HttptestComponent } from './httptest/httptest.component';
 import {HttpModule} from '@angular/http';
 import {MatGridListModule} from '@angular/material';
 import { CastComponent } from './cast/cast.component';
+import { SearchtestComponent } from './searchtest/searchtest.component';
+import { DetailsmoviestestComponent } from './detailsmoviestest/detailsmoviestest.component';
+import { TablesearchComponent } from './tablesearch/tablesearch.component';
+import { MoviestatsComponent } from './moviestats/moviestats.component';
+import {MatIconModule} from '@angular/material';
+import {FormsModule} from '@angular/forms';
+import { ShowallComponent } from './showall/showall.component';
+import { GenresComponent } from './genres/genres.component';
+import { StatsComponent } from './stats/stats.component';
+
 
 @NgModule({
   imports: [
@@ -40,10 +50,12 @@ import { CastComponent } from './cast/cast.component';
     MatToolbarModule,
     MatMenuModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    FormsModule,
+    MatIconModule
 
   ],
-  declarations: [UiTestCardComponent, TestSaasComponent, TestServicesComponent, TestobservablesComponent, ActorstestComponent, MoviestestComponent, CategoriestestComponent, CountrytestComponent, NothingComponent, DetailsComponent, HttptestComponent, CastComponent],
-  exports: [UiTestCardComponent, TestSaasComponent, TestServicesComponent, TestobservablesComponent, ActorstestComponent, MatMenuModule, MatToolbarModule, MatButtonModule, NothingComponent, MoviestestComponent, RouterModule, HttptestComponent,HttpModule,MatGridListModule,CastComponent]
+  declarations: [UiTestCardComponent, TestSaasComponent, TestServicesComponent, TestobservablesComponent, ActorstestComponent, MoviestestComponent, CategoriestestComponent, CountrytestComponent, NothingComponent, DetailsComponent, HttptestComponent, CastComponent, SearchtestComponent, DetailsmoviestestComponent, TablesearchComponent, MoviestatsComponent, ShowallComponent, GenresComponent, StatsComponent],
+  exports: [UiTestCardComponent, TestSaasComponent, TestServicesComponent, TestobservablesComponent, ActorstestComponent, MatMenuModule, MatToolbarModule, MatButtonModule, NothingComponent, MoviestestComponent, RouterModule, HttptestComponent, HttpModule, MatGridListModule, CastComponent, SearchtestComponent, MatIconModule , FormsModule, ShowallComponent, GenresComponent, StatsComponent, DetailsmoviestestComponent ]
 })
 export class TestModule { }

@@ -1,0 +1,14 @@
+.app-stats {
+  .low {
+    color: lightgray;
+  }
+  .normal {
+    color: blue;
+  }
+  .high {
+    color: lightgreen;
+  }
+  .invisible {
+    display: none;
+  }
+}
